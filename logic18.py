@@ -4,5 +4,7 @@ def main(a):
         a(int): parameter a
     Returns:
         bool: answer
+        Besh xonali tamsayı a berilgan bo'lsa, quyidagi "Raqamning barcha raqamlari kamayish tartibida" ni tekshiring.
     """
-    return
+    return  (a%10)<((a%100)//10)<((a%1000)//100)<((a%10000)//1000)<((a%100000)//10000) and ((a//100000)<1)
+print(main(54321))

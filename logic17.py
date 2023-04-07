@@ -6,4 +6,5 @@ def main(a):
     Returns:
         bool: answer
     """
-    return
+    return(a%10)>((a%100)//10)>((a%1000)//100)>((a%10000)//1000)>((a%100000)//10000) and (a//100000)<1
+print(main(12345))

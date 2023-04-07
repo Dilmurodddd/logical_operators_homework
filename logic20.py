@@ -7,6 +7,10 @@ def main(n):
         n(int): parameter n
     Returns:
         bool: answer
+    Bir va noldan iborat raqam berilgan (raqam birdan boshlanadi).
+    Agar birliklar soni noldan katta bo'lsa, rost, aks holda False qaytariladi.       9 < n < 10000
     """
+    
+    return (((n%10)==0) and ((n//10)==1) and ((n//100)<1)) or ((((n%10))>=0) and (((n%100)//10)==0) and ((n//100)==1) and ((n//1000)<1)) or (((n%10)>=0) and (((n%100)//10)>=0) and (((n%1000)//100)==0) and ((n//1000)==1) and ((n//10000)<1)) or ((((n%10)>=0) and (((n%100)//10)>=0) and (((n%1000)//100)>=0) and (((n%10000)//1000)==0) and ((n//10000)==1) and ((n//100000)<1)))
 
-    return
+print(main(10555))

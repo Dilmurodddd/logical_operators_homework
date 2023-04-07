@@ -7,5 +7,8 @@ def main(x):
         x(int): parameter x
     Returns:
         bool: answer
+        Ikki xonali tamsayı x berilgan bo'lsa, agar x palindromli butun son bo'lsa, true qiymatini qaytaring.
+    Butun son palindrom bo'lib, u oldinga qarab o'qisa.
     """
-    return 
+    return 10<x<1000
+print(main(121))
